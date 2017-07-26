@@ -1,2 +1,20 @@
 REFERENCE:
 1. https://ruslanspivak.com/lsbasi-part1/
+
+2. CGI - Common Gateway Interface
+	- is something like a way to communicate to the web server, when the request from the web browser and execute the program (PHP scripts)
+
+3. The archaic version repository of PHP
+	- https://github.com/rlerdorf
+	- https://github.com/phplang/php-past
+
+4. Wikihow, how to create programming language in 14 steps
+ 	- http://www.wikihow.com/Create-a-Programming-Language
+
+5. Lisp - Referrence to Design Patterns Criticism
+	- http://www.paulgraham.com/icad.html
+	* worth to read!!!!
+	ROOTED:
+		- Higher Order Function
+		- Tree (Data Structure)
+		- Quick Sort
