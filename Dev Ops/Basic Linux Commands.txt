@@ -27,6 +27,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	* File Copy
 		cp {-R} source/file path/file
 		(-R is for recursive copy)
+		cp -r source/file /path/file
+		(So far this is for the single copy tested)
 
 	* Folder or File Remove
 		rm -rf path/file
