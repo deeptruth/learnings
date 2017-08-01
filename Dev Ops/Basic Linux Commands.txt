@@ -1,0 +1,82 @@
+
+[The Linux (Ubuntu) Basic Commands]
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+==========================================
+>> Folder and File permissions setup
+	
+	chmod -R g+w *
+	chmod -R 755 = for directories
+	chmod -R 644 = for files
+	chown -R www-data:www-data *
+	
+	find {./path} -type d -exec chmod 755 {} \;
+	find {./path} -type f -exec chmod -Rf 644 {} \;
+<<
+==========================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+==========================================
+>> Folder or File Commands 
+	
+	* File Rename
+		mv /source/file /path/file
+
+	* File Copy
+		cp {-R} source/file path/file
+		(-R is for recursive copy)
+
+	* Folder or File Remove
+		rm -rf path/file
+		(This will delete permanently)
+
+	* Change DIR
+		cd path/file
+
+	* View file using VIM
+		vim path/file
+		(This will need to install the vim)
+
+	* To view the Root Tashbin
+		/root/.local/share/Trash/trash_files
+<<
+==========================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+==========================================
+>> Network Configuration
+
+	* To view the nmap NAT for host/ip
+		nmap {host/ip}
+		(This will need to install nmap)
+
+	* IP Tables
+		iptables -t nat -L
+		(This will need to install the iptables)
+
+	* The Firewall for ubuntu
+		ufw enable
+		ufw disable
+		ufw allow {port}
+		ufw reset 
+
+	* To show the bridges in ubuntu
+		brctl show
+		(This will need to install bridge-utils)
+<<
+==========================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+==========================================
+>> VGA or Graphic Card Status
+
+	lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
+<<
+==========================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
