@@ -1,8 +1,8 @@
 
 [The Linux (Ubuntu) Basic Commands]
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-==========================================
+====================================================================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 >> Folder and File permissions setup
 	
 	chmod -R g+w *
@@ -13,72 +13,76 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	find {./path} -type d -exec chmod 755 {} \;
 	find {./path} -type f -exec chmod -Rf 644 {} \;
 <<
-==========================================
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+====================================================================================
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-==========================================
+
+====================================================================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 >> Folder or File Commands 
 	
 	* File Rename
-		mv /source/file /path/file
+		- mv /source/file /path/file
 
 	* File Copy
-		cp {-R} source/file path/file
-		(-R is for recursive copy)
-		cp -r source/file /path/file
-		(So far this is for the single copy tested)
+		- cp {-R} source/file path/file
+			(-R is for recursive copy)
+		- cp -r source/file /path/file
+			(So far this is for the single copy tested)
 
 	* Folder or File Remove
-		rm -rf path/file
-		(This will delete permanently)
+		- rm -rf path/file
+			(This will delete permanently)
 
 	* Change DIR
-		cd path/file
+		- cd path/file
 
 	* View file using VIM
-		vim path/file
-		(This will need to install the vim)
+		- vim path/file
+			(This will need to install the vim)
 
 	* To view the Root Tashbin
-		/root/.local/share/Trash/trash_files
+		- /root/.local/share/Trash/trash_files
 <<
-==========================================
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+====================================================================================
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-==========================================
+
+====================================================================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 >> Network Configuration
 
 	* To view the nmap NAT for host/ip
-		nmap {host/ip}
-		(This will need to install nmap)
+		- nmap {host/ip}
+			(This will need to install nmap)
 
 	* IP Tables
-		iptables -t nat -L
-		(This will need to install the iptables)
+		- iptables -t nat -L
+			(This will need to install the iptables)
 
 	* The Firewall for ubuntu
-		ufw enable
-		ufw disable
-		ufw allow {port}
-		ufw reset 
+		- ufw enable
+		- ufw disable
+		- ufw allow {port}
+		- ufw reset 
 
 	* To show the bridges in ubuntu
-		brctl show
-		(This will need to install bridge-utils)
+		- brctl show
+			(This will need to install bridge-utils)
 <<
-==========================================
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+====================================================================================
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-==========================================
->> VGA or Graphic Card Status
 
-	lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
+====================================================================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+>> Computer Utilities
+
+	* VGA or Graphic Card Status
+		- lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
 <<
-==========================================
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+====================================================================================
