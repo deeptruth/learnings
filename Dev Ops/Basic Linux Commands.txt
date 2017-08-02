@@ -44,6 +44,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 	* To view the Root Tashbin
 		- /root/.local/share/Trash/trash_files
+
+	* To compress a file using tar
+		- tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+
+	* To decompress a file using tar
+		- tar -xzvf /path/to/source/archive.tar.gz -C /tmp
 <<
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ====================================================================================
