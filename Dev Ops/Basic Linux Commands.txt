@@ -9,6 +9,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	chmod -R 755 = for directories
 	chmod -R 644 = for files
 	chown -R www-data:www-data *
+	chown <user>:<user> path/file.ext
 	
 	find {./path} -type d -exec chmod 755 {} \;
 	find {./path} -type f -exec chmod -Rf 644 {} \;
@@ -77,6 +78,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	* To show the bridges in ubuntu
 		- brctl show
 			(This will need to install bridge-utils)
+
+	* Flush DNS in Ubuntu/Linux
+		- sudo /etc/init.d/dns-clean restart
+		- sudo /etc/init.d/networking force-reload
 <<
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ====================================================================================
