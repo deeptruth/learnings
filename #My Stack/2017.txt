@@ -24,3 +24,5 @@
 24. WAMP
 25. NetBeans
 26. Wordpress 4.8
+27. Docker
+28. Ubuntu 16.10 LTS
