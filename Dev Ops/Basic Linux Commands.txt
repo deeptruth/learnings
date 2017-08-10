@@ -94,6 +94,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 	* VGA or Graphic Card Status
 		- lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
+
+	* To kill app in linux
+		- ps aux | grep <app> 
+		* this will search the application info
+		- kill <id>
+		* get the id on the ps aux result and use this command.
 <<
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ====================================================================================
