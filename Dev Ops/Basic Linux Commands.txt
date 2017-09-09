@@ -93,6 +93,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			(This will show the current list of route(s) in the table)
 		- route add -net x.x.x.x (The IPADDR of route that will be adding) netmask 255.x.x.x gw (The current gateway of the local machine) 192.x.x.x
 		- route del -net x.x.x.x/24 (The destination IPADDR, the 24 will be depend on the size of the IPADDR by default 24 can be use)
+
+		* Some Referrence to achive this command:
+			- http://techstuffrevolution.blogspot.com/2012/10/access-your-smart-bro-canopy-connected.html
+			- http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html
+			- https://askubuntu.com/questions/677548/cant-delete-a-route-with-0-0-0-0-gateway
+			- http://www.configserverfirewall.com/ubuntu-linux/add-permanent-static-route-ubuntu/
 <<
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ====================================================================================
