@@ -32,9 +32,6 @@ RUN chown -R www-data:www-data /var/www \
 # PHP config
 #RUN sed -i -e "s/;\?date.timezone\s*=\s*.*/date.timezone = Europe\/Kiev/g" /etc/php/fpm/php.ini
 
-# Define default command.
-CMD sudo service php5.6-fpm start && nginx
-
 # Expose ports.
 EXPOSE 80
 
@@ -42,6 +39,9 @@ EXPOSE 80
 #CMD ["nginx", "-g", "daemon off;"]
 #CMD ["/usr/sbin/nginx", "-D", "FOREGROUND"]
 #CMD ["/usr/sbin/php-fpm7.0", "-D", "FOREGROUND"]
+
+# Define default command.
+CMD sudo service php5.6-fpm start && nginx
 
 # Replace the php environment to development mode.
 CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
