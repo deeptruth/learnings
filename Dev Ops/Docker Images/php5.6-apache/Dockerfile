@@ -47,4 +47,4 @@ CMD mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
 CMD mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
 
 # Start the service apache2
-CMD service apache2 start
+CMD sudo service apache2 start
