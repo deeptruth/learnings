@@ -33,6 +33,7 @@ ENV RUN_GROUP www-data
 # Expose ports.
 EXPOSE 80
 
-# Define default command.
-CMD sudo service php7.1-fpm start && nginx
-CMD cron && tail -f /var/log/cron.log
+# Replace the php environment to development mode.
+CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
+CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
+CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini

@@ -47,3 +47,8 @@ ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
 # By default start up apache in the foreground, override with /bin/bash for interactive.
 CMD /usr/sbin/apachectl -D FOREGROUND
+
+# Replace the php environment to development mode.
+CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
+CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
+CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini

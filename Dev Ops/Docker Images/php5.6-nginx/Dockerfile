@@ -42,3 +42,8 @@ EXPOSE 80
 #CMD ["nginx", "-g", "daemon off;"]
 #CMD ["/usr/sbin/nginx", "-D", "FOREGROUND"]
 #CMD ["/usr/sbin/php-fpm7.0", "-D", "FOREGROUND"]
+
+# Replace the php environment to development mode.
+CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
+CMD mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
+CMD mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
