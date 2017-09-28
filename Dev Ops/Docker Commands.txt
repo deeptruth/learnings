@@ -31,7 +31,7 @@
 [Docker Main Commands]
 
 >> DOCKER BUILD IMAGE
-	- docker build --tag={php5/apache} {/path}
+	- docker build --tag={php5/apache:latest} {/path}
 
 >> DOCKER REMOVE IMAGE
 	- docker rmi {-f} - this will force delete the image
