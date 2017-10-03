@@ -3,16 +3,15 @@ FROM ubuntu:latest
 MAINTAINER Joshua Clifford Reyes <reyesjoshuaclifford@gmail.com>
 
 RUN apt-get update -y
+
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y python-software-properties
-
-# RUN add-apt-repository ppa:ondrej/php
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
-RUN apt-get update --allow-unauthenticated -y
+RUN apt-get update -y
 
 # Install apache, PHP, and supplimentary programs, openssh-server, curl, and lynx-cur
-RUN apt-get --allow-unauthenticated install -y apache2 php7.1 php7.1-mysql php7.1-mbstring php7.1-mcrypt libapache2-mod-php7.1 curl lynx-cur openssl cron vim php-gd php7.1-gd php7.1-curl php7.1-xml
+RUN apt-get install -y apache2 php7.1 php7.1-mysql php7.1-mbstring php7.1-mcrypt libapache2-mod-php7.1 curl lynx-cur openssl cron vim php-gd php7.1-gd php7.1-curl php7.1-xml
 
 # Enable apache mods
 RUN a2enmod php7.1
@@ -32,14 +31,11 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
-# Expose apache
+# Expose ports.
 EXPOSE 80
 
 # Update the default apache site with the following we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-
-# By default start up apache in the foreground, override with /bin/bash for interactive.
-CMD /usr/sbin/apachectl -D FOREGROUND
 
 # Change permission in this folder.
 RUN chown -R www-data:www-data /var/www \ 
@@ -51,5 +47,8 @@ CMD cp /usr/lib/php/7.1/php.ini-development /etc/php/7.1/apache2
 CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
 CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
 
+# By default start up apache in the foreground, override with /bin/bash for interactive.
+CMD /usr/sbin/apachectl -D FOREGROUND
+
 # Define default command.
-CMD service apache2 start
+ENTRYPOINT service apache2 start && /bin/bash
