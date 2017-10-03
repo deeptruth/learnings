@@ -7,6 +7,7 @@
     "learnings": {
         "# My Stack",
         "Computer Science",
+        "Dev Ops",
         "PHP Frameworks",
         "Programming Paradigms"
     }
