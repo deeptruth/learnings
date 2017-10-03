@@ -1,3 +1,4 @@
+
 Goal: "To write effective and comprehensive documentation."
 
 Sample of Comment Structure Block:

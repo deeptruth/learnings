@@ -1,0 +1,119 @@
+
+/**
+ * [Programming Paradigm]
+ *
+ *  1. Procedural Programming
+ *  2. Object Oriented Programming
+ *  3. Functional Programming
+ */
+
+/**
+ * [Computer Operating System]
+ *
+ *  1. Windows
+ *  2. Ubuntu
+ */
+
+/**
+ * [Computer Hardware]
+ *
+ *  1. Computer Assembly
+ *  2. Networking
+ */
+
+/**
+ * [Web Server]
+ *
+ *  1. XAMMP
+ *  2. WAMP
+ *  3. Apache
+ *  4. Nginx
+ */
+
+/**
+ * [Programming/Scripting | Style | Markup Language]
+ *
+ *  1. PHP >= 5.6.*
+ *  2. Java - Swing
+ *  3. CSS 3
+ *  4. HTML 5
+ */
+
+/**
+ * [Database Management]
+ *
+ *  1. Mysql
+ *  2. Mssql
+ *  3. Sqlite
+ */
+
+/**
+ * [Mobile App Development]
+ *
+ *  1. Ionic
+ *  2. Android
+ */
+
+/**
+ * [Social Media API]
+ *
+ *  1. Facebook API
+ *  2. Twitter API
+ */
+
+/**
+ * [File Management]
+ *
+ *  1. Gitbash
+ *  2. Github
+ *  3. Bitbucket
+ *  4. SourceTree
+ *  5. Github Desktop
+ */
+
+/**
+ * [Task Management]
+ *
+ *  1. Jira
+ *  2. Flyspray
+ */
+
+/**
+ * [IDE]
+ *
+ *  1. Sublime Text
+ *  2. Notepad++
+ *  3. Netbeans
+ */
+
+/**
+ * [System Virtualization]
+ *
+ *  1. Docker
+ */
+
+/**
+ * [PHP Package Management]
+ *
+ *  1. Composer
+ *  2. Packagist
+ */
+
+/**
+ * [PHP Content Management System]
+ *
+ *  1. Drupal
+ *  2. Wordpress
+ */
+
+/**
+ * [PHP Framework]
+ *
+ *  1. Laravel
+ */
+
+/**
+ * [Communication]
+ *
+ *  1. Slack
+ */

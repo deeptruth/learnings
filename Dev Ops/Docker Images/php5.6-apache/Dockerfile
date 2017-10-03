@@ -41,7 +41,15 @@ ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 # By default start up apache in the foreground, override with /bin/bash for interactive.
 CMD /usr/sbin/apachectl -D FOREGROUND
 
+# Change permission in this folder.
+RUN chown -R www-data:www-data /var/www \ 
+    && find /var/www -type d -exec chmod 755 {} \; \
+    && find /var/www -type f -exec chmod 644 {} \;
+
 # Replace the php environment to development mode.
 CMD cp /usr/lib/php/5.6/php.ini-development /etc/php/5.6/apache2
 CMD mv /etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini.bak
 CMD mv /etc/php/5.6/apache2/php.ini-development /etc/php/5.6/apache2/php.ini
+
+# Define default command.
+CMD service apache2 start
