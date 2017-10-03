@@ -38,5 +38,6 @@ CMD mv /etc/php/7.1/apache2/php.ini /etc/php/7.1/apache2/php.ini.bak
 CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
 
 # Define default command.
-CMD service php7.1-fpm start
-CMD service nginx start
+ENTRYPOINT service php7.1-fpm start && \ 
+           service nginx start && \ 
+           /bin/bash
