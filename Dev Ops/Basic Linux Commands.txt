@@ -203,5 +203,17 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
        
         - apt-get autoremove
 
+
+
+    * To show the real path of the running application. ex. java
+
+        - update-alternatives --list {java}
+
+
+
+    * To show the hard drive usage.
+
+        - df
+
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ====================================================================================
