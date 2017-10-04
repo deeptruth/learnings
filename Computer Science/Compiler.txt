@@ -14,8 +14,7 @@ REFERENCE:
  	- http://www.wikihow.com/Create-a-Programming-Language
 
 5. Lisp - Referrence to Design Patterns Criticism
-	- http://www.paulgraham.com/icad.html
-	* worth to read!!!!
+	- worth to read : http://www.paulgraham.com/icad.html
 	ROOTED:
 		- Higher Order Function
 		- Tree (Data Structure)
