@@ -1,0 +1,35 @@
+
+[Sublime Text 3]
+- phpfmt
+- SublimeLinter
+- SublimeLinter-php
+- PHPCompanion
+- GitGutter
+
+* Ctrl + Shift + P - To show the Package Installer and other package in the current sublime. 
+
+* phpfmt - default properties for PSR-2 Coding Style
+    {
+        "autocomplete": false,
+        "autoimport": false,
+        "excludes":
+        [
+            "OnlyOrderUseClauses",
+            "OrderAndRemoveUseClauses",
+            "OrderMethod"
+        ],
+        "format_on_save": false,
+        "indent_with_space": 4,
+        "passes":
+        [
+            "GeneratePHPDoc",
+            "StripNewlineWithinClassBody",
+            "AutoSemicolon",
+            "SortUseNameSpace"
+        ],
+        "psr1": false,
+        "psr1_naming": false,
+        "psr2": true,
+        "readini": false,
+        "version": 1
+    }
