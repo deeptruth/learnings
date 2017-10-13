@@ -5,6 +5,7 @@
 - SublimeLinter-php
 - PHPCompanion
 - GitGutter
+- A File Icon
 
 * Ctrl + Shift + P - To show the Package Installer and other package in the current sublime. 
 
@@ -33,3 +34,5 @@
         "readini": false,
         "version": 1
     }
+
+* Use F11 to format the current PHP File.
