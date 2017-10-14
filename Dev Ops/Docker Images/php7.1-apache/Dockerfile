@@ -51,7 +51,7 @@ CMD mv /etc/php/7.1/apache2/php.ini-development /etc/php/7.1/apache2/php.ini
 CMD /usr/sbin/apachectl -D FOREGROUND
 
 # Reload the apache2 mods enable to be sure that all is loadup and ready to play.
-RUN a2enmode reload
+RUN a2enmod reload
 
 # Define default command.
 ENTRYPOINT service apache2 start && /bin/bash
