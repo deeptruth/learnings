@@ -9,7 +9,7 @@
         "Computer Science",
         "Dev Ops",
         "Dev Tools",
-        "PHP Frameworks",
+        "PHP CMS | Frameworks",
         "Programming Paradigms"
     }
 }
