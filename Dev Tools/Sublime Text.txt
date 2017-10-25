@@ -1,5 +1,6 @@
 
 [Sublime Text 3]
+
 - phpfmt
 - SublimeLinter
 - SublimeLinter-php

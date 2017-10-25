@@ -128,6 +128,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
     * The Firewall for ubuntu
+    * This may help for preventing unwanted access to the server, atleast a first layer of protection.
 
         - ufw enable
         - ufw disable
