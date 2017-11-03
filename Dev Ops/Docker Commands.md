@@ -1,5 +1,5 @@
 
-### DOCKER BASIC COMMANDS ###
+# DOCKER BASIC COMMANDS #
 
 * Docker Container Run.
 
@@ -39,7 +39,7 @@
     ```docker run -i -t -p 8080:80 ubuntu:latest```
 
     - https://docs.docker.com/engine/reference/commandline/run/#add-host-device-to-container-device
-    
+
 * Docker Stop All Containers
 
     ```docker stop $(docker ps -a -q)```
