@@ -11,17 +11,16 @@
     - Add Authentication by creating a user and --authenthication option before starting the mongoDB instance.
     - This is a simplified steps for setting up mongoDB ready:
         - Step 1 Install
-            - https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/
+            [ https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/ ]
         - Step 2 Check version
-            - https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu
+            [ https://stackoverflow.com/questions/19405791/what-version-of-mongodb-is-installed-on-ubuntu ]
         - Step 3 Add User admin
-            - https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password
-            - https://docs.mongodb.com/manual/tutorial/enable-authentication/
+            [ https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password ]
+            [ https://docs.mongodb.com/manual/tutorial/enable-authentication/ ]
         - Step 4 Change default Port
-            - https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell
-            - https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb
-        - Step 5 Restart
-            - and do the Step 1 start mongodb again.
+            [ https://stackoverflow.com/questions/9346431/how-can-i-see-what-ports-mongo-is-listening-on-from-mongo-shell ]
+            [ https://stackoverflow.com/questions/41933171/how-to-change-default-port-number-in-mongodb ]
+        - Step 5 Restart and do the Step 1 start mongodb again.
     - Install the NodeJS and NPM.
 
 ## REFERENCES :link: ##
