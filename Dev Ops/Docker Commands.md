@@ -48,7 +48,7 @@
 
     ```docker rm $(docker ps -a -q)```
 
-### DOCKER COMMON STEPS TO START ###
+# DOCKER COMMON STEPS TO START #
 
 * DOCKER BUILD IMAGE
     
