@@ -24,7 +24,7 @@
     Step 5 Restart
         - and do the Step 1 start mongodb again.
 ```
-    - Install NodeJS and NPM
+    - Install the NodeJS and NPM.
 
 ## REFERENCES :link: ##
 - For ``#1`` Reference:
