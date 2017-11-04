@@ -1,7 +1,7 @@
 
 ## INFO :bulb: ##
 1. Creating an HTTPS Server with Node JS.
-    - If you've alredy a Cert and Key just add it somewhere in root folder in the system ex. Linux /etc/...
+    - If you've already a Cert and Key just add it somewhere in root folder in the system ex. Linux /etc/...
     then point that files in the node application startup, the pointing will depending on the folder position
     ex. ./../../ to exit the current folder of that node application and point directly to the ssl files.
 2. MongoDB.
