@@ -7,6 +7,7 @@
     "learnings": {
         "# My Stack",
         "Computer Science",
+        "Dev News",
         "Dev Ops",
         "Dev Tools",
         "Programming Languages",
