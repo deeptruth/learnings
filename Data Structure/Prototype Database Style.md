@@ -22,3 +22,13 @@
 #### Question: ####
 1. How will the proposed data structure cater the flexibility.
 
+
+
+## Drupal
+- They're using Entity
+- Problem:
+    - Joining Tables
+    - Distinct
+
+## Wordpress
+
