@@ -22,8 +22,6 @@
 #### Question: ####
 1. How will the proposed data structure cater the flexibility.
 
-
-
 ## Drupal
 - They're using Entity
 - Problem:
@@ -31,4 +29,11 @@
     - Distinct
 
 ## Wordpress
+- They're allowed the developer to build own schema and optional to apply the prefix for each table
+that are set in the wp-config.php
 
+##### Proposed Data Structure: #####
+
+Benefits of EAV:
+1. Can easily add new column without altering the whole table.
+2. Eliminate the null column in each row.
