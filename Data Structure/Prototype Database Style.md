@@ -100,3 +100,26 @@ Types of Databases
 
 * Relational Database
 - https://stackoverflow.com/questions/145689/relational-database-design-patterns
+
+## Presentation Structure:
+1. Module Management
+2. Data Structure
+3. Multiple Database Supports
+4. Users Data Structure
+5. Example create CMS module for Nucleus
+    - EAV model.
+
+
+CMS
+    - ACL
+        - view
+            - index.blade.php
+    - Module management
+        - view
+            - 
+    - User management
+    - Login
+        - view
+            - admin
+            - frontend
+            - login.blade.php
